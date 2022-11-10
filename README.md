@@ -14,7 +14,7 @@ Saleck EL JILI
 
 ![](https://i.imgur.com/dIPJ1Ds.png)
 
-### Une alert if is alphanumeric
+### Alert if is alphanumeric
 
 ![](https://i.imgur.com/mfkzizJ.png)
 

@@ -1,2 +1,2 @@
-it("Is alphanumerich", () => {});
-it("Is not alphanumeric", () => {});
+it("Is alphanumerich ", () => {});
+it("Is not alphanumeric ", () => {});
