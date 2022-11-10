@@ -42,7 +42,7 @@ function Login() {
         <div className="right">
           <h1>PROJET DEV SECOPS</h1>
           <form>
-            <input type="text" placeholder="Username" onChange={handleChangeName}/>
+            <input type="text" placeholder="Username" onChange={handleChangeName} required pattern="[a-zA-Z0-9]+"/>
 
             <button onClick={isAlphaNumeric}>Test</button>
           </form>
