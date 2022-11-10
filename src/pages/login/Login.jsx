@@ -1,6 +1,28 @@
 import './login.scss'
+import {useState} from "react";
 
 function Login() {
+  const [name, setName] = useState('');
+  const handleChangeName = e => setName(e.target.value);
+  const isAlphaNumeric = () => {
+    
+      let code, i, len;
+      let isalp= true;
+    
+      for (i = 0, len = name.length; i < len; i++) {
+        code = name.charCodeAt(i);
+        if (!(code > 47 && code < 58) && //numeric (0-9)
+            !(code > 64 && code < 91) && //upper alpha (A-Z)
+            !(code > 96 && code < 123)) { //lower alpha (a-z)
+          alert('is not alphanumeric')
+          isalp=false
+        }
+      }
+      if(isalp)
+        alert('is alphanumeric')
+    
+    
+  };
   return (
     <div className="login">
       <div className="card">
@@ -20,9 +42,9 @@ function Login() {
         <div className="right">
           <h1>PROJET DEV SECOPS</h1>
           <form>
-            <input type="text" placeholder="Username" />
+            <input type="text" placeholder="Username" onChange={handleChangeName}/>
 
-            <button >Login</button>
+            <button onClick={isAlphaNumeric}>Test</button>
           </form>
         </div>
       </div>
