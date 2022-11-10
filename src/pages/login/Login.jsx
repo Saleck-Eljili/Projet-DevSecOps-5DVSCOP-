@@ -7,9 +7,12 @@ function Login() {
         <div className="left">
           <h1>Hello World.</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
-            alias totam numquam ipsa exercitationem dignissimos, error nam,
-            consequatur.
+            Membre groupe: 
+            <i>Marlyse Saintich Majorie HANGAMALONGO MAPAGA,
+          
+          Kokou Kami Landry Ulrich MAMAN,
+          Ben-Jamin MAMFOUMBI KOUELY et 
+          Saleck EL JILI.</i>
           </p>
           
           
