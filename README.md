@@ -1,9 +1,9 @@
 # Projet-DevSecOps-5DVSCOP-
 
 **Membre groupe:**
-Marlyse Saintich Majorie HANGAMALONGO MAPAGA
-Kokou Kami Landry Ulrich MAMAN
-Ben-Jamin MAMFOUMBI KOUELY
+Marlyse Saintich Majorie HANGAMALONGO MAPAGA,
+Kokou Kami Landry Ulrich MAMAN,
+Ben-Jamin MAMFOUMBI KOUELY et
 Saleck EL JILI
 
 ![](https://i.imgur.com/wTZ3pnO.png)
