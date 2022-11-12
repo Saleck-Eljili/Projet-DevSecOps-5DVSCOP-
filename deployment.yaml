@@ -1,31 +1,19 @@
-apiVersion: v1
-kind: Service
-metadata:
-  name: deploy-react-kubernetes-service
-  labels:
-    app: app
-spec:
-  type: NodePort
-  ports:
-    - port: 3000
-      name: http
-      nodePort: 30080
-  selector:
-    app: app
----
-apiVersion: extensions/v1beta1
 kind: Deployment
+apiVersion: apps/v1
 metadata:
-  name: deploy-react-kubernetes-deployment
+  name: deploy-react-kubernetes
 spec:
-  replicas: 1
+  replicas: 2
+  selector:
+    matchLabels:
+      app: deploy-react-kubernetes
   template:
     metadata:
       labels:
-        app: app
+        app: deploy-react-kubernetes
     spec:
       containers:
         - name: deploy-react-kubernetes
-          image: registry.<ibm_cloud_region>.bluemix.net/<your_namespace>/deploy-react-kubernetes
+          image: eljilisa/deploy-react-kubernetes
           ports:
-            - containerPort: 3000
+            - containerPort: 80
